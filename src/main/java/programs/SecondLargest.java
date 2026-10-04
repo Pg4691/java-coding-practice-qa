@@ -1,5 +1,7 @@
 package programs;
 
+
+// Problem: FInd second-largest number
 public class SecondLargest {
 
     public static void main(String[] args) {
@@ -19,8 +21,11 @@ public class SecondLargest {
             else if (num > secondMax && num != max) {
                 secondMax = num;
             }
+        }if (secondMax == Integer.MIN_VALUE) {
+            System.out.println("No second largest");
+        } else {
+            System.out.println("Second largest: " + secondMax);
         }
 
-        System.out.println(secondMax);
     }
 }
